@@ -3,6 +3,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  width: 100%;
+  margin: 0rem;
+}
+
 .main-content {
   position: relative;
   top: 4rem; /* To offset for fixed header. */
@@ -150,7 +155,7 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0rem;
 }
 
 /* Set the font of h3 */
