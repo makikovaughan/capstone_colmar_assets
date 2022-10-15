@@ -259,7 +259,7 @@ article p::after {
 
 /* Column setting of Start learning */
 .learning-col {
-  width: 30%;
+  width: 25%;
   padding: 2rem;
   display: inline-flex;
   align-items: stretch;
