@@ -250,6 +250,11 @@ article p::after {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-bottom: 2rem;
+  max-width: 100%;
+}
+
+.main-content .mobile {
+  display: none;
 }
 
 /* Column setting of Start learning */
