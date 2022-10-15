@@ -1,0 +1,395 @@
+html {
+  font-family: sans, sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+  color: grey;
+}
+
+/* Header */
+header {
+  top: 0rem;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  color: grey;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  height: 4rem;
+}
+
+header .desktop {
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: 0.75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 30rem) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 0.5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+  }
+}
+
+nav button {
+  padding: 0.1875rem 0.5rem;
+  line-height: 1.6;
+}
+
+#text-logo {
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.banner-container {
+  background-color: lightgray;
+  align-items: center;
+}
+
+/* Set the left container */
+.left-container {
+  width: 59%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+/* Set the right container */
+.right-container {
+  width: 38%;
+  text-align: left;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+/* picture of left banner */
+.container-image {
+  padding: 1.5 rem 2 rem;
+  width: 100%;
+}
+
+.school-image {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.thesis-image {
+  width: 100%;
+}
+
+/* Set the font of h1 */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/* Set the font of h2 */
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Set the font of h3 */
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Set the front of p */
+p {
+  font-size: 2rem;
+  margin: 1.5rem 0rem;
+}
+
+/* Course information paragraph */
+.course-info p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.course-info h3 {
+  padding-left: 1rem;
+}
+
+.button {
+  width: 90%;
+  border: 0rem;
+}
+
+/* Setting of button in banner right container */
+.main-content .banner-container .right-container .button {
+  width: 60%;
+  padding: 0.5rem 0rem;
+  border: 0rem;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+#button-text {
+  margin: 0rem;
+  font-size: 2rem;
+}
+
+/* Add " at the beginning of paragraph */
+article p::before {
+  content: "\201C";
+}
+
+/* Add " at the end of paragraph */
+article p::after {
+  content: "\201D";
+}
+
+/* Information about School Display three rows vertically*/
+.school-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Insert the image and information holizontally */
+.school-row {
+  display: flex;
+  border: 0.1rem solid lightgray;
+  padding: 1rem;
+  width: 100%;
+}
+
+.left-school-col {
+  width: 35%;
+  height: auto;
+}
+
+.right-school-col {
+  width: 65%;
+}
+
+.learning-image {
+  width: 100%;
+}
+
+/* Start Learning */
+.start-learning {
+  text-align: center;
+  padding-top: 2rem;
+  background-color: lightgrey;
+}
+
+/* Learning container */
+.learning-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgrey;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Column setting of Start learning */
+.learning-col {
+  width: 30%;
+  padding: 2rem;
+  display: inline-flex;
+  align-items: stretch;
+}
+
+/* Align the columns */
+.course-info {
+  background-color: whitesmoke;
+}
+
+.thesis-title {
+  margin: 2rem 1.5rem;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+}
+
+.right-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  flex-direction: row;
+  width: 100%;
+}
+
+.thesis-left-col {
+  max-width: 35%;
+}
+
+.thesis-right-col {
+  max-width: 65%;
+}
+
+footer {
+  padding-top: 2rem;
+  color: gray;
+}
+
+/* When the screen size is mobile */
+@media only screen and (max-width: 30rem) {
+  .desktop {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .left-container {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0rem;
+  }
+
+  .main-content .banner-container .right-container .button {
+    width: 95%;
+    padding: 0.5rem 0rem;
+    border: 0rem;
+    background-color: #4a4a4a;
+    color: white;
+  }
+
+  .school-row {
+    flex-direction: column;
+    padding: 1rem;
+    border: 0;
+  }
+
+  .school-row .mobile {
+    display: flex;
+    width: 99%;
+    height: auto;
+  }
+
+  .school-image {
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .start-learning {
+    text-align: center;
+    padding-top: 2rem;
+    background-color: white;
+    color: gray;
+  }
+
+  /* Learning container for mobile*/
+  .main-content .mobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    width: 95%;
+  }
+
+  .mobile-class {
+    background-color: lightgray;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  footer {
+    padding-top: 4rem;
+  }
+}
